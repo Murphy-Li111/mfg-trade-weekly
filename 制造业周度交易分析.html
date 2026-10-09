@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>国防军工(801740.SL) | 2026 年 10 月 8 日</title>
+<title>国防军工(801740.SL) | 2026 年 10 月 9 日</title>
 <style>
 :root{
   --paper:#F7F2E8;
@@ -20,12 +20,15 @@
   --amber:#FFC000;
   --up:#B03A2E;
   --down:#1F6B45;
-  --serif:Georgia,"Times New Roman","Source Han Serif SC","Noto Serif SC","Songti SC",STSong,SimSun,serif;
-  --sans:"Helvetica Neue",Helvetica,Arial,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;
+  /* 数字与西文统一用 Arial：放在每个字体栈的**最前面**，中文不含 Arial 字形会自动
+     回退到紧随其后的中文字体（宋体／思源宋体／微软雅黑），于是呈现为「中文衬线 + 数字 Arial」。
+     改这里就够，不要再往各分节里单独写 font-family。 */
+  --serif:Arial,"Helvetica Neue",Helvetica,Georgia,"Times New Roman","Source Han Serif SC","Noto Serif SC","Songti SC",STSong,SimSun,serif;
+  --sans:Arial,"Helvetica Neue",Helvetica,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;
   --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
-  /* 报头大标题里指数代码「(801740.SL)」专用字体。宋体优先（最常规、数字半角齐线），
-     往后是 macOS 的宋体回退；想换成仿宋 / 思源宋体 / 衬线体只改这一处。 */
-  --idx-code-font:SimSun,"宋体",NSimSun,"Songti SC",STSong,"FangSong","仿宋",STFangsong,serif;
+  /* 报头大标题里指数代码「(801740.SL)」——纯数字与字母，同样走 Arial。
+     想换回宋体只改这一处。 */
+  --idx-code-font:Arial,"Helvetica Neue",Helvetica,SimSun,"宋体",NSimSun,"Songti SC",STSong,serif;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -921,7 +924,7 @@ figure{margin:0}
 
   <div class="colophon">
     <span>数据来源：同花顺 iFinD，华泰财富研究</span>
-    <span>2026/09/30</span>
+    <span>2026/10/09</span>
   </div>
 
   <!-- ============ 免责声明 ============
