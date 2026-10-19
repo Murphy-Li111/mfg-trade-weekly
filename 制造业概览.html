@@ -138,6 +138,13 @@ h1.nameplate .latin{
   font-size:clamp(9px,1.05vw,12px);letter-spacing:.42em;color:var(--red);
   text-transform:uppercase;margin-top:12px;
 }
+/* 英文副题下方的团队署名：字号、字色与 .latin 完全一致，居中；
+   汉字不跟 .42em 的字距（中文会散开），收到 .12em。 */
+h1.nameplate .team{
+  display:block;font-family:var(--sans);font-weight:700;
+  font-size:clamp(9px,1.05vw,12px);letter-spacing:.12em;color:var(--red);
+  margin-top:7px;
+}
 .dateline{
   display:flex;justify-content:center;gap:14px;flex-wrap:wrap;
   font-family:var(--sans);font-size:11px;letter-spacing:.08em;color:var(--muted);
@@ -553,14 +560,15 @@ figure{margin:0}
     </div>
     <h1 class="nameplate">制造业交易活跃度周观察
       <span class="latin">Manufacturing Sectors · Weekly Overview</span>
+      <span class="team">【华泰财富研究| 制造团队】</span>
     </h1>
     <div class="dateline analysts">
-    <span>宋丽凌 SAC No. S0570523010001；</span>
-    <span>李孟菲 SAC No. S0570523080001；</span>
-    <span>谢瑾贤 SAC No. S0570525100004；</span>
-    <span>孙意新 SAC No. S0570526050001；</span>
-    <span>宋　迪 SAC No. S0570526070018；</span>
-  </div>
+      <span>宋丽凌 SAC No. S0570523010001；</span>
+      <span>李孟菲 SAC No. S0570523080001；</span>
+      <span>谢瑾贤 SAC No. S0570525100004；</span>
+      <span>孙意新 SAC No. S0570526050001；</span>
+      <span>宋　迪 SAC No. S0570526070018；</span>
+    </div>
   </header>
 
   <!-- ============ 导语：文字在左 / 图表在右 ============ -->
