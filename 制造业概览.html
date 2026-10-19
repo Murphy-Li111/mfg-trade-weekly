@@ -303,6 +303,13 @@ figure{margin:0}
   display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
   font-family:var(--sans);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
 }
+/* 页脚风险提示：位于「数据来源」行之下、免责声明细线之上，左边缘与「数据来源」对齐。
+   字号字色沿用 colophon，但汉字不做 letter-spacing（.18em 对中文过散）。 */
+.risk{
+  margin:12px 0 0;padding:0;text-align:left;text-indent:0;
+  font-family:var(--sans);font-size:9.5px;line-height:1.7;letter-spacing:.02em;
+  color:var(--muted);
+}
 
 /* ---------- 页脚免责声明 ----------
    版式与「制造业投资日历」页脚一致：上方细线分隔、标题 11.7px 粗体、
@@ -717,6 +724,8 @@ figure{margin:0}
     <span>数据来源：同花顺 iFinD，华泰财富研究</span>
     <span>2026/10/19</span>
   </div>
+
+  <p class="risk">风险提示：市场波动加剧，事件催化影响资金行为，政策变动风险。</p>
 
   <!-- ============ 免责声明 ============
        固定法律文本，不参与数据绑定；版式对齐「制造业投资日历」页脚（首行缩进 2em、两端对齐、
